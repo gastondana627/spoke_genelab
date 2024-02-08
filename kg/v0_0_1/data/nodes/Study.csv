@@ -1,0 +1,11 @@
+identifier,tissue,mouse_strain,exposure_duration_days
+GLDS-47,Liver,C57BL/6T,22
+GLDS-48,Liver,C57BL/6J,38
+GLDS-98,Adrenal gland,C57BL/6J,38
+GLDS-99,Extensor digitorum longus muscle,C57BL/6J,38
+GLDS-100,Eye,C57BL/6J,38
+GLDS-101,Gastrocnemius muscle,C57BL/6J,38
+GLDS-102,Kidney,C57BL/6J,38
+GLDS-103,Quadriceps muscle,C57BL/6J,38
+GLDS-104,Soleus muscle,C57BL/6J,38
+GLDS-105,Tibialis anterior muscle,C57BL/6J,38
