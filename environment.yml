@@ -1,0 +1,24 @@
+name: spoke-genelab 
+
+channels:
+  - conda-forge
+  - anaconda
+
+dependencies:
+  - python=3.10
+  - jupyterlab
+  - jupyterlab_widgets
+  - ipywidgets
+  - pandas
+  - pyarrow
+  - tqdm
+  - matplotlib
+  - seaborn
+  - black
+  - papermill
+  - py2neo=2021.2.3
+  - monotonic=1.5
+  - python-dotenv=1.0.0
+  - ipycytoscape
+  - plotly
+
