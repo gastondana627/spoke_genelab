@@ -1,0 +1,3 @@
+property,type,description,example
+identifier,string,Protein UniProt ID,Q9D7Y7
+name,string,Mouse Protein Name,2210010C04Rik

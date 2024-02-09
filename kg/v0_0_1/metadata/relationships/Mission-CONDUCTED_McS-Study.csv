@@ -1,0 +1,3 @@
+property,type,description,example
+from,string,Unique identifier for Mission,RR1
+to,string,Unique identifier for Study,GLDS-47
