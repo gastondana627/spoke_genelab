@@ -23,7 +23,6 @@ git clone https://github.com/BaranziniLab/spoke_genelab.git
 cd spoke_genelab
 ```
 
-```
 2. Create a Conda environment
 
 The file `environment.yml` specifies the Python version and all required dependencies.
@@ -63,12 +62,15 @@ mamba env create -f environment.yml
 11. Edit the file `.env` and set the following variables
 
 KG version number
+
 `KG_VERSION=v0.0.1`
 
 Path to the cloned git repository
+
 `KG_GIT=/Users/.../spoke_genelab/`
 
 Path to the Neo4J instance in Neo4j Desktop (in quotes). See step 8.
+
 `NEO4J_INSTALL_PATH="/Users/.../Library/Application Support/Neo4j Desktop/Application/relate-data/dbmss/dbms-3d4b95d1-0219-480b-a3c4-ee5a409cc383"`
 
 
@@ -84,11 +86,11 @@ Path to the Neo4J instance in Neo4j Desktop (in quotes). See step 8.
 conda activate spoke-genelab
 ```
 
-3. Open and run the Jupyter Notebook import_to_desktop.ipynb to import the data into the versioned `spoke-genlab-v#.#.#` database.
+3. Open and run the Jupyter Notebook import_to_desktop.ipynb to import the data into the versioned `spoke-genelab-v#.#.#` database.
 
 [import_to_desktop.ipynb](notebooks/import_to_desktop.ipynb)
 
-4. When the import is completed, click the `Refresh` button. The newly created database `spoke-genlab-v#.#.#` will be listed.
+4. When the import is completed, click the `Refresh` button. The newly created database `spoke-genelab-v#.#.#` will be listed.
 
 ![](docs/db_imported.png)
 
@@ -100,7 +102,7 @@ conda activate spoke-genelab
 
 ![](docs/select_db_icon.png)
 
-7. Use the pull-down menu to select a version of `spoke-genlab-v#.#.#` database
+7. Use the pull-down menu to select a version of `spoke-genelab-v#.#.#` database
    
 ![](docs/db_ready.png)
 
