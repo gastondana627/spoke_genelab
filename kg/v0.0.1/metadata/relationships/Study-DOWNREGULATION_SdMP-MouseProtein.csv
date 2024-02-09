@@ -1,0 +1,8 @@
+property,type,description,example
+from,string,Unique identifier for the study,GLDS-47
+to,string,UniProt accession number,Q9DC51
+adj_p_value,float,Adjusted p-value,
+log2fc,float,log2 fold change,
+factor,string,study factors used for log2fc calculation,spaceflight_v_ground_control
+factor_1,string,study factor1,spaceflight
+factor_2,string,study factor2,ground_control

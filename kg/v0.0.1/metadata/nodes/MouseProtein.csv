@@ -1,0 +1,3 @@
+property,type,description,example
+identifier,string,UniProt accession number,Q9DC51
+name,string,Gene symbol,Gnai3

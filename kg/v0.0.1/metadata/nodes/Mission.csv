@@ -1,0 +1,5 @@
+property,type,description,example
+identifier,string,Unique id of the mission,RR1
+name,string,Mission name,Rodent Research 1
+organism,string,Organism name,Mus musculus
+assays,string[],List of assays,protein expression profiling|RNA methylation profiling|DNA methylation profiling|transcription profiling
