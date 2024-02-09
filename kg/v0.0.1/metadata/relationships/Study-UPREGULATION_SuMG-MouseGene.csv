@@ -1,8 +1,8 @@
 property,type,description,example
-from,string,Unique identifier for the study,GLDS-47
-to,string,GenBank Gene ID,14679
-adj_p_value,float,Adjusted p-value,
-log2fc,float,log2 fold change,
-factor,string,study factors used for log2fc calculation,spaceflight_v_ground_control
-factor_1,string,study factor1,spaceflight
-factor_2,string,study factor2,ground_control
+from,string,Unique identifier for Study,GLDS-99
+to,string,Unique identifier for MouseGene,14679
+adj_p_value,float,Adjusted P-Value,0.00975889
+log2fc,float,Log2 Fold Change,0.220241994
+factor,string,Factors Analyzed,spaceflight_v_ground_control
+factor_1,string,First Factor,spaceflight
+factor_2,string,Second Factor,ground_control

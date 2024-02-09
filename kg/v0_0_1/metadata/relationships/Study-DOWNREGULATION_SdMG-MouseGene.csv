@@ -1,8 +1,0 @@
-property,type,description,example
-from,string,Unique identifier for Study,GLDS-99
-to,string,Unique identifier for MouseGene,67608
-adj_p_value,float,Adjusted P-Value,0.016441347
-log2fc,float,Log2 Fold Change,-0.145485596
-factor,string,Factors Analyzed,spaceflight_v_ground_control
-factor_1,string,First Factor,spaceflight
-factor_2,string,Second Factor,ground_control

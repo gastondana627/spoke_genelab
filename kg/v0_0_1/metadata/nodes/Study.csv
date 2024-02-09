@@ -1,5 +1,0 @@
-property,type,description,example
-identifier,string,GeneLab ID,GLDS-47
-tissue,string,Tissue Analyzed,Liver
-mouse_strain,string,Mouse Strain,C57BL/6T
-exposure_duration_days,integer,Exposure Duration (days),22

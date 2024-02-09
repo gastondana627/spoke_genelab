@@ -1,3 +1,3 @@
 property,type,description,example
-from,string,Unique id of the mission,RR1
-to,string,Unique identifier for the study,GLDS-47
+from,string,Unique identifier for Mission,RR1
+to,string,Unique identifier for Study,GLDS-47

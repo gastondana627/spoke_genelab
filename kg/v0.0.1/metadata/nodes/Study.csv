@@ -1,5 +1,5 @@
 property,type,description,example
-identifier,string,Unique identifier for the study,GLDS-47
-tissue,string,Name of the tissue,Liver
-mouse_strain,string,Mouse strain,C57BL/6T
-exposure_duration_days,int,Duration of exposure,22
+identifier,string,GeneLab ID,GLDS-47
+tissue,string,Tissue Analyzed,Liver
+mouse_strain,string,Mouse Strain,C57BL/6T
+exposure_duration_days,int,Exposure Duration (days),22
