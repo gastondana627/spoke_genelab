@@ -19,6 +19,7 @@ dependencies:
   - py2neo=2021.2.3
   - monotonic=1.5
   - python-dotenv=1.0.0
+  - openjdk=17.0.8
   - ipycytoscape
   - plotly
 
