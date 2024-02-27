@@ -1,4 +1,5 @@
 # Byte-compiled / optimized / DLL files
+data/genelab_data_in_csv_format.pickle
 __pycache__/
 *.py[cod]
 *$py.class
