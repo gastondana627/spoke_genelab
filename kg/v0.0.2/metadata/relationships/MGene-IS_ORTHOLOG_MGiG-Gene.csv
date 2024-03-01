@@ -1,0 +1,3 @@
+property,type,description,example
+from,string,Model organism gene ENTREZID,14679
+to,string,Human Gene ENTREZID,2773

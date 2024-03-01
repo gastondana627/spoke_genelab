@@ -1,0 +1,3 @@
+property,type,description,example
+from,string,GeneLab Data System GLDS-ID-MD5_hashcode(factors and materials),GLDS-401-ec55d3e698d289f2afd663725127
+to,string,UBERON Ontology ID,UBERON:0001377

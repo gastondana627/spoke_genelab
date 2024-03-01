@@ -1,0 +1,11 @@
+property,type,description,example
+identifier,string,GeneLab Data System GLDS-ID-MD5_hashcode(factors and materials),GLDS-401-ec55d3e698d289f2afd663725127
+name,string,Assay name,transcription profiling - RNA Sequencing (RNA-Seq)
+technology,string,Assay technology,RNA Sequencing
+measurement,string,Assay measurement type,transcriptional profiling
+factors_1,string[],First factor(s) in transcriptional profiling,Space Flight
+factors_2,string[],Second factor(s) in transcriptional profiling,Ground Control
+material_1,string,"First material studied, e.g., cell type, tissue, organ",Quadriceps femoris
+material_2,string,"Second material studied, e.g., cell type, tissue, organ",Gastrocnemius
+material_id_1,string,First material identifier,UBERON:0001377
+material_id_2,string,Second material identifier,UBERON:0001388
