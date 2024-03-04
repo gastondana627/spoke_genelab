@@ -22,4 +22,5 @@ dependencies:
   - openjdk=17.0.8
   - ipycytoscape
   - plotly
+  - inflection
 
