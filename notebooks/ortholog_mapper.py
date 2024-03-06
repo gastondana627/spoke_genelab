@@ -54,7 +54,7 @@ def map_orthologs(df, ortholog_species_col, ortholog_species_entrez_gene_col, hu
     >>> print(mapped_df)
             taxonomy  entrez_gene  human_entrez_gene
     0       10090     14573        2668
-    1       10090     154013201	   3201
+    1       10090     15401 	   3201
     
     """
     
