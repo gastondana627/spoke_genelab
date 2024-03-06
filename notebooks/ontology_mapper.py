@@ -1,3 +1,9 @@
+"""
+This module provides functions to map terms to concepts in an ontology.
+
+Author: Peter W Rose (pwrose@ucsd.edu)
+Created: 2024-03-03
+"""
 import os
 import requests
 from dotenv import load_dotenv
@@ -13,7 +19,7 @@ def map_ontology(df, input_col, output_col, ontology, apikey):
     df (pandas.DataFrame): The DataFrame containing the data to be mapped.
     input_col (str): The name of the column in `df` containing terms to be mapped.
     output_col (str): The name of the column in `df` to store the mapped ontology concepts.
-    ontology (Ontology): The name of the ontology
+    ontology (Ontology): Name of the ontology
 
     Returns
     -------
@@ -29,14 +35,15 @@ def map_ontology(df, input_col, output_col, ontology, apikey):
     >>> import os
     >>> import pandas as pd
     >>> from dotenv import load_dotenv
-    >>> import bioportal_utils
+    >>> import ontology_mapper
     >>>
     >>> # get BioPortal API key
     >>> load_dotenv(<path to .env file>)
     >>> apikey = os.getenv("BIOPORTAL_API_KEY")
     >>>
+    >>> # Sample DataFrame (may contain other columns)
     >>> df = pd.DataFrame({"terms": ["liver", "brain", "zygote"]})
-    >>> mapped_df = bioportal_utils.map_ontology(df, "terms", "mapped_concepts", "UBERON", apikey)
+    >>> mapped_df = ontology_mapper.map_ontology(df, "terms", "mapped_concepts", "UBERON", apikey)
     >>> print(mapped_df)
             terms     mapped_concepts
     0       liver     UBERON:0002107
