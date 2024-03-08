@@ -1,6 +1,6 @@
 property,type,description,example
 from,string,GeneLab Data System GLDS-ID-MD5_hashcode(factors and materials),GLDS-401-ec55d3e698d289f2afd663725127
-to,string,Gene ENTREZID,14679
+to,int,Gene ENTREZID,14679
 log2fc,float,Log2 Fold Change,-0.145485596
 adj_p_value,float,Adjusted P-Value,0.016441347
 direction,string,Direction of gene regulation [upregulates|downregulates],downregulates
