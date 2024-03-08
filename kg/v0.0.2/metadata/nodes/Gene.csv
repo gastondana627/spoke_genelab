@@ -1,2 +1,2 @@
 property,type,description,example
-identifier,string,Gene ENTREZID,2773
+identifier,int,Gene ENTREZID,2773
