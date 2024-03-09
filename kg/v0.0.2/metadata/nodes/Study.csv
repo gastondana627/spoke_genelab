@@ -2,7 +2,7 @@ property,type,description,example
 identifier,string,NASA Open Science Data Repository ID,OSD-401
 name,string,Name of the study,Alternative splicing regulates the physiological adaptation of the mouse hind limb postural and phasic muscles to microgravity
 organism,string,NCBI scientific organism name,Mus musculus
-taxononmy,string,NCBI taxonomy ID,10090
+taxonomy,string,NCBI taxonomy ID,10090
 strain,string,Organism strain,BALB/c
 duration,int,Exposure duration,9
 duration_unit,string,The unit of the exposure duration,week
