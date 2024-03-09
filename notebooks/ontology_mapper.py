@@ -76,8 +76,8 @@ def map_ontology(df, input_col, output_col, ontology, apikey):
     df[output_col] = df[output_col].fillna("")
 
     # convert URI to CURIE
-    df[output_col] = df[output_col].str.replace("http://purl.obolibrary.org/obo/", "")
-    df[output_col] = df[output_col].str.replace("_", ":")
+    df[output_col] = df[output_col].str.replace("http://purl.obolibrary.org/obo/", "", regex=False)
+    df[output_col] = df[output_col].str.replace("_", ":", regex=False)
     
     return df
     
