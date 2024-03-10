@@ -114,12 +114,12 @@ def check_ortholog_species(df, ortholog_species_col, ortholog_dbs):
     available_species = {"9606"}
 
     ortholog_list = get_ortholog_species()
-    for db in ortholog_list.keys():
+    for db in ortholog_dbs:
         available_species.update(ortholog_list.get(db))
 
     not_available = requested_species - available_species
     if len(not_available) > 0:
-        print(f"WARNING: The following ortholog species: {','.join(not_available)} are not available in {','.join(ortholog_dbs)}")
+        print(f"WARNING: The following ortholog species: {', '.join(not_available)} are not available in {', '.join(ortholog_dbs)}")
         
         
 def get_ortholog_species():
@@ -190,6 +190,7 @@ def compare(ortholog_dbs):
     common = jax.merge(hgnc, on=["ortholog_species", "ortholog_species_entrez_gene"], how="left")
 
     return common
+
 
 def get_ortholog_list():
     data = []
