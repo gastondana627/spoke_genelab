@@ -1,5 +1,5 @@
 property,type,description,example
-identifier,int,Gene ENTREZID,14679
+identifier,string,Gene ENTREZID,14679
 name,string,Gene Symbol,Gnai3
 organism,string,NCBI scientifc organism name,Mus musculus
 taxonomy,string,NCBI taxonomy id,10090

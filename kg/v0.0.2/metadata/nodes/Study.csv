@@ -4,5 +4,5 @@ name,string,Name of the study,Alternative splicing regulates the physiological a
 organism,string,NCBI scientific organism name,Mus musculus
 taxonomy,string,NCBI taxonomy ID,10090
 strain,string,Organism strain,BALB/c
-duration,int,Exposure duration,9
+duration,string,Exposure duration,9
 duration_unit,string,The unit of the exposure duration,week
