@@ -1,3 +1,3 @@
 property,type,description,example
-from,int,Model organism gene ENTREZID,14679
-to,int,Human Gene ENTREZID,2773
+from,string,Model organism gene ENTREZID,14679
+to,string,Human Gene ENTREZID,2773
