@@ -207,7 +207,6 @@ def get_ortholog_list():
 def get_ortholog_statistics():
     data = []
     dbs = list(get_ortholog_dbs())
-    dbs = ["JAX"]
     
     for db in dbs:
         mappings = get_ortholog_mappings([db])
