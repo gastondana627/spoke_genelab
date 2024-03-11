@@ -23,4 +23,5 @@ dependencies:
   - ipycytoscape
   - plotly
   - inflection
+  - ete3=3.1.3
 
