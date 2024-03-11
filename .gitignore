@@ -1,6 +1,3 @@
-data/genelab_data_in_csv_format.pickle
-codes/taxdump.tar.gz
-kg/v0.0.2/data/
 # Byte-compiled / optimized / DLL files
 data/genelab_data_in_csv_format.pickle
 __pycache__/
@@ -117,5 +114,7 @@ neo4j_bulk_importer.py
 utils.py
 PrepareNeo4jBulkImport.ipynb
 PrepareNeo4jBulkImport_out.ipynb
-notebooks/taxdump.tar.gz
-notebooks/.ipynb_checkpoints
+taxdump.tar.gz
+data/genelab_data_in_csv_format.pickle
+codes/taxdump.tar.gz
+kg/v0.0.2/data/
