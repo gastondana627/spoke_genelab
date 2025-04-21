@@ -1,0 +1,3 @@
+property,type,description,example
+from,string,Model organism gene ENTREZID,72482
+to,string,Identifier for base pair range,1:155433001-155434000

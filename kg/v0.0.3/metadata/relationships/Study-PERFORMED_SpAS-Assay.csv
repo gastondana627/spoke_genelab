@@ -1,0 +1,3 @@
+property,type,description,example
+from,string,NASA Open Science Data Repository ID,OSD-47
+to,string,GeneLab Data System GLDS-ID-MD5_hashcode(factors and materials),xxx

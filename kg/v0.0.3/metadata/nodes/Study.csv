@@ -1,0 +1,7 @@
+property,type,description,example
+identifier,string,NASA Open Science Data Repository ID,OSD-47
+name,string,Name of the study,OSD-47
+project_title,string,Title of project,"Rodent Research-1(RR-1), Muscle Atrophy of Muscle Sparing in Transgenic Mice (CASIS RR1)"
+project_type,string,Type of project,Spaceflight Study
+organism,string,NCBI scientific organism name,Mus musculus
+taxonomy,string,NCBI taxonomy ID,10090

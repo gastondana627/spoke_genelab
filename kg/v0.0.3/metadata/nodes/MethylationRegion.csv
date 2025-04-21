@@ -1,0 +1,10 @@
+property,type,description,example
+identifier,string,Identifier for base pair range,1:155433001-155434000
+name,string,Name of methylation region,1:155433001-155434000
+chromosome,string,Name or number of the chromosome,1
+start,int,Starting base pair position,155433001
+end,int,Ending base pair position,155434000
+dist_to_feature,int,Distance to feature,0
+in_promoter,boolean,Indicates whether the region overlaps with the promoter,true
+in_exon,boolean,Indicates whether the region overlaps with an exon,true
+in_intron,boolean,Indicates whether the region overlaps with an intron,false
