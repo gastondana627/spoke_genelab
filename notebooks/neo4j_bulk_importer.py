@@ -92,6 +92,9 @@ def setup():
     if os.path.exists(os.path.join(NEO4J_IMPORT, "indices.cypher")):
         os.remove(os.path.join(NEO4J_IMPORT, "indices.cypher"))
 
+    if os.path.exists(os.path.join(NEO4J_IMPORT, "import.report")):
+        os.remove(os.path.join(NEO4J_IMPORT, "import.report"))
+
     # Copy data and metadata files into the import directory
     # The header line is removed since the column names and types are provided in a separate file for bulk download.
 

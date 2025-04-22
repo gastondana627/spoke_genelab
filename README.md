@@ -1,4 +1,4 @@
-# NASA GeneLab Omics Knowledge Graph
+# NASA SPOKE-GeneLab Knowledge Graph
 
 This repository contains the code and metadata needed to build a **Knowledge Graph (KG)** for [NASA GeneLab](https://www.nasa.gov/osdr-genelab-about/) omics datasets hosted on the [Open Science Data Repository (OSDR)](https://osdr.nasa.gov/bio/repo/search?q=&data_source=cgene,alsda&data_type=study).
 
@@ -119,9 +119,12 @@ The file `environment.yml` specifies the Python version and all required depende
 mamba env create -f environment.yml
 ```
 
-3. Copy the file `env_template` to `.env`
+3. Create an account in [BioPortal](https://bioportal.bioontology.org/) and copy the API key. BioPortal is used to map terms to ontologies.
 
-4. Edit the file `.env` and set the following variables
+   
+4. Copy the file `env_template` to `.env`
+
+5. Edit the file `.env` and set the following variables
 
 KG version number
 
@@ -135,6 +138,9 @@ Path to the Neo4J instance in Neo4j Desktop (in quotes). Make sure to enclose th
 
 `NEO4J_INSTALL_PATH="/Users/.../Library/Application Support/Neo4j Desktop/Application/relate-data/dbmss/dbms-3d4b95d1-0219-480b-a3c4-ee5a409cc383"`
 
+BioPortal API Key
+
+`BIOPORTAL_API_KEY=<bioportal api key>`
 
 ### Download and Process Datasets and upload to Neo4J Graph Database
 
@@ -156,7 +162,7 @@ conda activate spoke-genelab
 | 2_create_study_mission_nodes.ipynb | Creates Study and Mission nodes and their relationships |
 | 3_create_gene_nodes.ipynb  | Creates MGene (model organism) and mapped Gene (human) gene nodes |
 | 4_create_assay_nodes.ipynb | Creates Assay nodes and their relationships |
-| 5_import_to_desktop.ipynb  | Imports the formatted data into a local Neo4j KG |
+| 5_import_to_neo4j.ipynb    | Imports the formatted data into a Neo4j KG |
 | 6_query_examples.ipynb     | Runs example queries (optional) |
 
 4. When the import is completed, click the `Refresh` button in Neo4j Desktop. The newly created database `spoke-genelab-v0.0.3` will be listed.
@@ -171,7 +177,7 @@ conda activate spoke-genelab
 
 ![](docs/select_db_icon.png)
 
-7. Use the pull-down menu to select a version of `spoke-genelab-v0.0.3` database
+7. Use the pull-down menu to select a version of `spoke-genelab-v0.0.3` database. Wait for about 30+ seconds until the database is loaded and the nodes are listed as shown below.
    
 ![](docs/db_ready.png)
 
@@ -186,3 +192,17 @@ Drag the file kg/v0.0.3/style.grass onto the Neo4j Browser window to set the nod
 To stop the conda environment, type
 
 ```conda deactivate```
+
+------
+
+## 📚 Citation
+
+PW Rose, CA Nelson, SG Gebre, K Soman, KA Grigorev, LM Sanders, SV Costes, SE Baranzini, NASA SPOKE-GeneLab Knowledge Graph. Available online: https://github.com/BaranziniLab/spoke_genelab (2025)
+
+CA Nelson, PW Rose, K Soman, LM Sanders, SG Gebre, SV Costes, SE Baranzini, Nasa Genelab-Knowledge Graph Fabric Enables Deep Biomedical Analysis of Multi-Omics Datasets, https://ntrs.nasa.gov/citations/20250000723 (2025)
+
+------
+
+## 💰 Funding
+NSF Award number [2333819](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819), Proto-OKN Theme 1: Connecting Biomedical information on Earth and in Space via the SPOKE knowledge graph.
+
