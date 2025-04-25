@@ -87,7 +87,7 @@ The organization and syntax for defining the metadata and data are described in 
     
 ![](docs/open_terminal.png)
 
-7. Type `pwd` in the terminal window to show the path to the `NEO4J_HOME` directory. This path is required in the `.env` file, see the next section.
+7. Type `pwd` in the terminal window to show the path to the `NEO4J_INSTALL_PATH` directory. This path is required in the `.env` file, see the next section.
  
 ![](docs/get_path.png)
 
@@ -142,6 +142,8 @@ BioPortal API Key
 
 `BIOPORTAL_API_KEY=<bioportal api key>`
 
+------
+
 ### Download and Process Datasets and upload to Neo4J Graph Database
 
 1. Start the spoke-genelab Graph DBMS
@@ -192,6 +194,19 @@ Drag the file kg/v0.0.3/style.grass onto the Neo4j Browser window to set the nod
 To stop the conda environment, type
 
 ```conda deactivate```
+
+------
+
+### Dump Neo4J Graph Database
+1. Stop the database
+
+2. Hover the cursor over the `spoke-genelab-v0.0.3` database to and select `Dump` from the menu.
+
+![](docs/dump_db.png)
+
+3. When the dump is complete, click the `Reveal files in Finder` button to open the directory that contains the `spoke-genelab-v0.0.3.dump` file.
+
+![](docs/dump_location.png)
 
 ------
 
