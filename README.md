@@ -75,11 +75,11 @@ The organization and syntax for defining the metadata and data are described in 
 
 ![](docs/rename_project.png)
 
-4. Click the `ADD` button and select `Local DBMS`.
+4. Click the `ADD` button and select `Local DBMS`. **Select Neo4j version 5.23.0.**
 
 ![](docs/add_graph_dbms.png)
 
-5. Enter the password `neo4jdemo` and click `Create` (use the default Neo4j Version).
+5. Enter the password `neo4jdemo` and click `Create`.
     
 ![](docs/create_dbms.png)
     
