@@ -220,13 +220,15 @@ To stop the conda environment, type
 ### Dump Neo4J Graph Database
 1. Stop the database
 
-2. Hover the cursor over the `spoke-genelab-v0.0.3` database to and select `Dump` from the menu.
+2. Hover the cursor over the `spoke-genelab-v0.0.3` database and select `Dump` from the menu.
 
 ![](docs/dump_db.png)
 
 3. When the dump is complete, click the `Reveal files in Finder` button to open the directory that contains the `spoke-genelab-v0.0.3.dump` file.
 
 ![](docs/dump_location.png)
+
+This database dump will be used to create the SPOKE-GeneLab composite database.
 
 ------
 
