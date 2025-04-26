@@ -39,11 +39,15 @@ This repository contains the code and metadata needed to build a **Knowledge Gra
 
 ## 🕸️ Graph Schema
 
-All entities and their connections follow this simplified schema:
-
 ![Simplified Graph Schema](docs/spoke-genelab-v0.0.3-simplified.png)
 
-*Figure: High‑level overview of nodes (circles) and relationships (arrows). Proxy nodes (gray) can be used to link to nodes in the [SPOKE KG](https://spoke.ucsf.edu/) using the Neo4j Fabric [composite database](https://neo4j.com/docs/operations-manual/current/tutorial/tutorial-composite-database/).
+**Figure**: Schematic overview of the GeneLab knowledge graph structure, highlighting key node types (circles) and relationships (arrows).
+
+The `Assay–MEASURED–MGene` relationship encodes Log₂ fold changes derived from transcription profiling assays, while the `Assay–MEASURED–MethylationRegion` relationship captures methylation differences identified through DNA methylation assays. The `MGene–METHYLATED_IN–MethylationRegion` relationship links model organism genes (`MGene`) to 1,000 base pair genomic regions (`MethylationRegion`) exhibiting differential methylation.
+
+Proxy nodes (shown in gray) represent standardized identifiers for human genes (ENTREZ ID), anatomical structures (UBERON ID), and cell types (CL ID), enabling integration with external Neo4j databases and supporting composite graph database construction.
+
+Diagram generated using [arrows.app](https://arrows.app).
 
 ---
 
@@ -57,10 +61,20 @@ The following node and relationship metadata files define the graph schema.
 - **Relationships**   
   [kg/v0.0.3/metadata/relationships/](kg/v0.0.3/metadata/relationships/)
 
-The organization and syntax for defining the metadata and data are described in the [kg-import](https://github.com/sbl-sdsc/kg-import) Git repository.
-
+The organization and conventions for defining the metadata and data are described in the [kg-import](https://github.com/sbl-sdsc/kg-import) Git repository.
 
 ---
+
+## 🔗 SPOKE - GeneLab Composite Database
+
+![](docs/spoke-genlab-v0.0.3-composite.png)
+
+**Figure**: Integration of the SPOKE and GeneLab knowledge graphs using proxy nodes.  
+The **GeneLab** graph (right), a knowledge graph representing spaceflight omics datasets, depicts key experimental entities: `Assay`, `Study`, `Mission`, `MGene`, and `MethylationRegion`, along with their relationships. 
+**Proxy nodes** (gray) represent external identifiers (ENTREZ, UBERON, CL) and enable linkage to the **[SPOKE](https://spoke.ucsf.edu/)** graph (left), a rich biomedical knowledge graph comprising biological processes, molecular functions, diseases, compounds, and more. The dashed lines indicate mappings to enable the construction of a [composite Neo4j graph database](https://neo4j.com/docs/operations-manual/current/tutorial/tutorial-composite-database/). The composite graph enables federated queries across multiple KGs.
+
+---
+
 ## ⚙️ Data Import Into Neo4j Knowledge Graph
 
 ### Setup Neo4j Desktop
