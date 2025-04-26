@@ -170,7 +170,13 @@ BioPortal API Key
 conda activate spoke-genelab
 ```
 
-3. Navigate to the `notebooks` directory and run the following notebooks
+3. Launch Jupyter Lab
+
+```
+jupyter lab
+```
+
+4. Navigate to the `notebooks` directory and run the following notebooks
 
 | Notebook                   |   Description           |
 |----------------------------|-------------------------|
@@ -181,29 +187,29 @@ conda activate spoke-genelab
 | 5_import_to_neo4j.ipynb    | Imports the formatted data into a Neo4j KG |
 | 6_query_examples.ipynb     | Runs example queries (optional) |
 
-4. When the import is completed, click the `Refresh` button in Neo4j Desktop. The newly created database `spoke-genelab-v0.0.3` will be listed.
+5. When the import is completed, click the `Refresh` button in Neo4j Desktop. The newly created database `spoke-genelab-v0.0.3` will be listed.
 
 ![](docs/db_imported.png)
 
-5. Click the `Open` button to launch the database.
+6. Click the `Open` button to launch the database.
 
 ![](docs/open_dbms.png)
 
-6. Click on the database icon on the left.
+7. Click on the database icon on the left.
 
 ![](docs/select_db_icon.png)
 
-7. Use the pull-down menu to select a version of `spoke-genelab-v0.0.3` database. Wait for about 30+ seconds until the database is loaded and the nodes are listed as shown below.
+8. Use the pull-down menu to select a version of `spoke-genelab-v0.0.3` database. Wait for about 30+ seconds until the database is loaded and the nodes are listed as shown below.
    
 ![](docs/db_ready.png)
 
-8. Set the Graph Stylesheet
+9. Set the Graph Stylesheet
 
 Drag the file kg/v0.0.3/style.grass onto the Neo4j Browser window to set the node colors, sizes, and labels.
 
-9. Now you are ready to run Cypher queries on the selected database.
+10. Now you are ready to run Cypher queries on the selected database.
 
-10. When you are finished, stop the database in the Neo4j Desktop.
+11. When you are finished, stop the database in the Neo4j Desktop.
 
 To stop the conda environment, type
 
