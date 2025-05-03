@@ -114,3 +114,10 @@ notebooks_dev/
 data/
 examples_dev/
 kg/v*/data/
+
+
+# Ignore API JSON responses
+*.json
+*.csv
+output_csvs/
+
