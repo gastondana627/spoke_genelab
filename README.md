@@ -4,6 +4,16 @@ This repository contains the code and metadata needed to build a **Knowledge Gra
 
 ---
 
+
+## Objective 2: Neo4j Setup(May 3, 2025 - KnowHax)
+
+In this objective, Neo4j was successfully installed and integrated into the project to provide graph-based data storage and querying capabilities. The Neo4j database is now running locally and can be accessed via `bolt://localhost:7687`. 
+
+The repository was updated to include the Neo4j setup in a dedicated branch (`objective-2-neo4j-setup-GasMan`), which was created to ensure that changes related to this objective are isolated and easy to track. The necessary configuration files were added, and a `.gitignore` update was made to prevent unnecessary files (such as API responses and large data outputs) from being committed.
+
+With this setup, the project is now prepared for the next steps in utilizing Neo4j to store and query graph data, which will be essential for the objectives ahead.
+
+
 ## 🚀 Features
 
 - **Automated graph construction** from datasets in the OSDR
