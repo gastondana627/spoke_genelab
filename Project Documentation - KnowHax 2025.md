@@ -72,11 +72,9 @@ Objective 2: Find downloadable environmental data source, process, model, format
 Objective 3: Load formatted data from remaining Obj 1 & Obj 2 work into Neo4j. Verify full integration.
 Bonus Objective: Analyze integrated graph for SANS insights using Cypher.
 Deliverables: Documentation, GitHub Markdown, Pitch Deck, Videos.
-Image 5-4-...at 5.48 PM
 
-JPG
-Image 5-4-...at 6.14 PM
 
-JPG
-You’re near your Gemini Advanced usage limit. You can upload files again at 7:06 PM. Learn more.
+
+
+
 
