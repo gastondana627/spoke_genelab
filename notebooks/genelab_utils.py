@@ -12,17 +12,15 @@ from datetime import datetime
 from dateutil.parser import parse
 import pandas as pd
 import requests
-from dotenv import load_dotenv
+import config
 
 API_ROOT = "https://visualization.osdr.nasa.gov/biodata/api/v2/"
 DATASET_URL = f"{API_ROOT}dataset/"
-DATASET_PATH = "../data"  # data download directory
+DATASET_PATH = config.DATA_DIR  # data download directory
 
 
 def setup_environment():
-    load_dotenv("../.env", override=True)
-
-    NEO4J_DATA = os.getenv("NEO4J_DATA")
+    NEO4J_DATA = config.NEO4J_DATA
     if not NEO4J_DATA:
         raise Exception("NEO4J_DATA is not set in the .env file!")
 
@@ -32,9 +30,9 @@ def setup_environment():
     # Create KG directories
     os.makedirs(node_dir, exist_ok=True)
     os.makedirs(rel_dir, exist_ok=True)
-    os.makedirs("../data", exist_ok=True)
+    os.makedirs(config.DATA_DIR, exist_ok=True)
 
-    print(f"Environment setup for KG version: {os.getenv('KG_VERSION')}")
+    print(f"Environment setup for KG version: {config.KG_VERSION}")
 
     return node_dir, rel_dir
 

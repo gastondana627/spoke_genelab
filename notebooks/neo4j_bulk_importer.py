@@ -127,7 +127,7 @@ def dump_database(verbose=False):
     neo4j_admin = quote_path(os.path.join(NEO4J_BIN, "neo4j-admin"))
 
     os.makedirs(neo4j_dump, exist_ok=True)
-    neo4j_dump = quote_path(eo4j_dump)
+    neo4j_dump = quote_path(neo4j_dump)
     command = f"{neo4j_admin} database dump {NEO4J_DATABASE} --to-path={neo4j_dump}"
     
     if verbose:
